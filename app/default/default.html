@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <label for="inputText">Input Text</label>
+      <textarea [(ngModel)]="inputTextMessage"  class="form-control form-control-sm" rows="30" (ngModelChange)="ngOnChanges($event)"></textarea>
+    </div>
+    <div class="col-sm-8">
+      <fieldset class="form-group">
+        <label for="inputText">Hash from Input Text</label>
+        <input [(ngModel)]="hash"  class="form-control" (ngModelChange)="ngOnChanges($event)" />
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="exampleInputPassword1">Signature</label>
+        <input type="text" class="form-control" [(ngModel)]="msgSignature" (ngModelChange)="ngOnChanges($event)">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="exampleInputPassword1">Verify Result (v: {{ vValue }})</label>
+        <input type="text" class="form-control" [(ngModel)]="verifyResult">
+        <small class="text-warning">
+          {{ signatureError }}
+        </small>
+      </fieldset>
+    </div>
+  </div>
+</div>
