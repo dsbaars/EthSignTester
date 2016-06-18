@@ -4,7 +4,7 @@ import { Router }           from '@angular/router-deprecated';
 import ethUtil from 'ethereumjs-util';
 
 @Component({
-  templateUrl: 'app/default/default.html',
+  templateUrl: './app/default/default.html',
 })
 export class DefaultComponent implements OnChanges {
   constructor() {

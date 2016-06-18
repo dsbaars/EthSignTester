@@ -7,7 +7,7 @@ import { DefaultComponent } from './default/default';
 
 @Component({
   selector: 'app',
-  templateUrl: '/templates/app.html',
+  templateUrl: './templates/app.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [
     ROUTER_PROVIDERS
