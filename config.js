@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "/",
+  baseURL: "/EthSignTester",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
